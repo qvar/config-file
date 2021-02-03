@@ -1,0 +1,10 @@
+# this is .alias file for csh shell
+alias ls 'ls -F --color'
+alias fd 'find . -iname'
+alias gr 'grep -riIn'
+set prompt='\n%{\033[7;33m%}[%h] %P [%j] %{\033[37m%} %n@%m %{\033[36m%} %/ %{\033[0m%} \n>> '
+
+# git alias
+alias gs "mgit status"
+alias gd "git difftool origin/main -- "
+alias adog "git log --decorate --oneline --graph"
