@@ -219,8 +219,3 @@ noremap! <c-?> <c-h>
 " open in full screen
 " set lines=999 columns=999 
 
-" load Coverity command
-let coverity_vimrc= "~/.vim/coverity.vimrc"
-if filereadable(coverity_vimrc)
-     execute "source " . fnameescape(coverity_vimrc)
-endif
