@@ -1,0 +1,137 @@
+# Map Prefix from C-a to C-<space>
+escape ^@a  
+
+# Set scrollback buffer to 10000
+defscrollback 10000
+
+# use mouse to change focus
+mousetrack on
+
+# Customize the status line
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+
+altscreen on
+
+#### key binding ####
+
+# space -> list of windows 
+bind ' ' windowlist -b
+
+#split
+bind S split 
+bind s split -v 
+bind x remove
+bind X only
+bind h focus left
+bind j focus down
+bind k focus up
+bind l focus right
+#bind t focus top
+#bind b focus bottom
+
+# split resizing
+bind E resize =
+bind e resize -b =
+bind + resize +5
+bind - resize -5
+bind F resize max
+bind f resize -b max
+# resize 20%      set current region to 20% of original size
+# resize +20%     increase current region by 20%
+# resize -b =     make all windows equally
+# resize max      maximize current region
+# resize min      minimize current region
+# The available options for resizing are ‘-h’(horizontal), ‘-v’(vertical), ‘-b’(both), ‘-l’(local to layer), and ‘-p’(perpendicular).
+
+# copy paste
+bind v copy
+bind V paste .
+
+# mouse scrooll
+#termcapinfo xterm* ti@:te@
+
+# ==============================================================
+#  BIND bind - defaults
+# ==============================================================
+# The "bind" command assign keys to (internal) commands
+# SCREEN checks all the keys you type; you type the key
+# which is known as the "command character" then SCREEN
+# eats this key, too, and checks whether this key is
+# "bound" to a command.  If so then SCREEN will execute it.
+#
+# The command "bind" allows you to chose which keys
+# will be assigned to the commands.
+#
+# Some commands are bound to several keys -
+# usually to both some letter and its corresponding
+# control key combination, eg the command
+# "(create) screen" is bound to both 'c' and '^C'.
+#
+# The following list shows the default bindings:
+#
+# break     ^B b
+# clear     C
+# colon     :
+# copy      ^[ [
+# detach    ^D d
+# digraph   ^V
+# displays  *
+# dumptermcap .
+# fit       F
+# flow      ^F f
+# focus     ^I
+# hardcopy  h
+# help      ?
+# history   { }
+# info      i
+# kill      K k
+# lastmsg   ^M m
+# license   ,
+# log       H
+# login     L
+# meta      x
+# monitor   M
+# next      ^@ ^N sp n
+# number    N
+# only      Q
+# other     ^X
+# pow_break B
+# pow_detach  D
+# prev      ^H ^P p ^?
+# quit      \
+# readbuf   <
+# redisplay ^L l
+# remove    X
+# removebuf =
+# reset     Z
+# screen    ^C c
+# select    " '
+# silence   _
+# split     S
+# suspend   ^Z z
+# time      ^T t
+# title     A
+# vbell     ^G
+# version   v
+# width     W
+# windows   ^W w
+# wrap      ^R r
+# writebuf  >
+# xoff      ^S s
+# xon       ^Q q
+# ^]  paste .
+# - select -
+# 0 select 0
+# 1 select 1
+# 2 select 2
+# 3 select 3
+# 4 select 4
+# 5 select 5
+# 6 select 6
+# 7 select 7
+# 8 select 8
+# 9 select 9
+# I login on
+# O login off
+# ] paste .
