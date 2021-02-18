@@ -217,5 +217,6 @@ endif
 noremap! <c-?> <c-h>
 
 " open in full screen
-" set lines=999 columns=999 
-
+if has("gui_running")
+  set lines=999 columns=999
+endif
