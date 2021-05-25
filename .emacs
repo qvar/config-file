@@ -6,3 +6,6 @@
 (scroll-bar-mode -1)
 ;;hide menu bar
 (menu-bar-mode -1)
+
+;; display line number
+(global-display-line-numbers-mode)
